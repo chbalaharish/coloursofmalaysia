@@ -1,0 +1,27 @@
+@media (max-width:768px){
+
+.page-title{
+font-size:32px;
+}
+
+.page-subtitle{
+font-size:15px;
+padding:0 10px;
+}
+
+}
+@media (max-width:768px){
+
+.festival-section,
+.food-section,
+.place-section{
+margin-top:40px;
+}
+
+.festival-img,
+.food-img,
+.place-img{
+margin-bottom:20px;
+}
+
+}
