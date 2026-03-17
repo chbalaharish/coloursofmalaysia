@@ -1,0 +1,301 @@
+/* GLOBAL DESIGN SYSTEM - SAGE GREEN BLOG AESTHETIC */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .brand-title, .page-title, .featured-title, .hero-title, .article-title {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+    font-weight: 400; /* Use elegant serif */
+}
+
+p, .article-excerpt {
+    line-height: 1.8;
+    color: #555555;
+    font-weight: 300;
+}
+
+/* NAVBAR - MINIMALIST CREAM/SAGE */
+.custom-navbar.navbar, .navbar.bg-dark {
+    background: transparent !important;
+    padding: 20px 0;
+    border-bottom: 0px;
+    transition: 0.3s;
+}
+
+.navbar.bg-white {
+    background: #ffffff !important;
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: 0.3s;
+    z-index: 1030;
+}
+
+.navbar-brand, .brand-title {
+    font-size: 16px !important;
+    font-weight: 600;
+    color: #222 !important;
+    letter-spacing: 1px !important;
+    text-transform: capitalize;
+}
+
+.navbar-nav .nav-link {
+    font-size: 11px !important;
+    color: #333 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600 !important;
+    margin-left: 30px;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #000 !important;
+}
+
+.navbar-scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+    backdrop-filter: none !important;
+}
+
+/* BUTTONS */
+.btn-primary, .explore-btn, .read-more-btn, .footer-btn {
+    background: #3B5F54 !important; /* Sage green tone */
+    color: #fff !important; 
+    padding: 10px 24px !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: none !important;
+    border-radius: 0 !important; /* Flat edges */
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-primary:hover, .explore-btn:hover, .read-more-btn:hover, .footer-btn:hover {
+    background: #2a473e !important;
+    color: #fff !important;
+}
+
+/* SAGE HERO SECTION (index.html top) */
+.sage-hero {
+    background: #EAF0EC; /* Pale Sage Green */
+    padding: 120px 0 100px;
+    position: relative;
+    border-bottom: 1px solid #e0e6e2;
+}
+
+.sage-hero-title {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.sage-hero-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4a5c53;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+/* DOTTED LABEL STYLES */
+.dot-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #555;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.dot-label .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #437166; /* Sage teal dot */
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+/* ARTICLE GRID STYLES */
+.article-grid-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.article-card {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.article-img-container {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px; /* subtle soft edge like reference */
+    transition: transform 0.6s ease;
+}
+
+.article-card:hover .article-img {
+    transform: scale(1.03);
+}
+
+.article-meta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.article-title-link {
+    color: #222;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.article-title-link:hover {
+    color: #527A6F;
+}
+
+.article-excerpt {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* ABOUT SIDEBAR STYLES (Optional) */
+.sidebar-about {
+    margin-bottom: 40px;
+}
+
+.sidebar-about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.sidebar-about-text {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* Legacy overrides just in case */
+.featured-section {
+    background: #ffffff;
+    padding: 60px 0;
+}
+.featured-img-container {
+    height: 100%;
+    min-height: 480px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.featured-img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    border-radius: 4px !important;
+}
+
+
+/* Page Titles */
+.page-header-section {
+    padding: 80px 0 40px;
+    text-align: left;
+    background: #ffffff;
+}
+
+.page-title {
+    font-size: 42px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-size: 15px;
+    color: #666;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+/* FOOTER UPDATES */
+.footer-main {
+    background: #fdfdfd;
+    color: #333;
+    padding: 60px 0;
+    margin-top: 80px;
+    border-top: 1px solid #eaeaea;
+}
+.footer-heading {
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.footer-text, .footer-bottom, .footer-list a {
+    color: #555;
+    text-decoration: none;
+}
+.footer-list a:hover {
+    color: #3B5F54;
+}
+.social-icons a {
+    color: #333;
+}
+.social-icons a:hover {
+    color: #3B5F54;
+}
+.footer-input {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.footer-line {
+    background: #eaeaea;
+}
+
+@media (max-width:768px){
+    .sage-hero-title {
+        font-size: 38px;
+    }
+    .article-title {
+        font-size: 22px;
+    }
+}
